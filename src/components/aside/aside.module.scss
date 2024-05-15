@@ -1,6 +1,4 @@
 .container {
-  //width: 180px;
-  //width: 40px;
   min-width: 40px;
   background-color: rgb(47, 47, 58);
   height: 100vh;
@@ -44,8 +42,7 @@
   flex-direction: column;
   justify-content: space-around;
   border-radius: 5px;
-  //transition: width 0.1s ease-out;
-  
+  transition: width 0.2s ease-out;
     li{
       list-style: none;
       display: flex;
