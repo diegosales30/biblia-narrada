@@ -6,6 +6,10 @@ import { FaHandHoldingHeart, FaQuestion } from "react-icons/fa";
 import { FaBook, FaPlay, FaMoon, FaSun } from "react-icons/fa6";
 import { TbCircleLetterNFilled } from "react-icons/tb";
 
+setTimeout(() => {
+  document.querySelector('p').classList.add('visible');
+}, 10000);
+
 const Aside = () => {
   const [isOpen, setIsOpen] = useState(true);
 

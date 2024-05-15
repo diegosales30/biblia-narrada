@@ -19,6 +19,7 @@
       justify-content: flex-start;
       align-items: center;
       svg{
+       
         font-size: 1.5rem;
         margin-left: 5px ;
       }
@@ -28,8 +29,11 @@
 
 .modalClose {
   width: 40px;
-  transition: width 0.4s ease;
+  transition: width 0.5s ease;
   li{
+    svg{
+      display: flex !important;
+    }
     p{
       display: none;
     }
@@ -38,11 +42,25 @@
 
 .modalOpen{
   width: 180px;
-  transition: width 0.2s ease-out;
+  transition: width 0.4s ease-out;
     li{
       p{
+        font-size: 1rem;
         margin-left: 40px;
         position: fixed;
+        opacity: 0; 
+        animation-name: fadeIn; 
+        animation-duration: 2s; 
+        animation-fill-mode: forwards;
       } 
   }
 }
+@keyframes fadeIn {
+  0% {
+    opacity: 0; 
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
