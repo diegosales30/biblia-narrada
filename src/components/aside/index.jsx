@@ -50,7 +50,7 @@ const Aside = () => {
   //
   return (
     <aside className={styles.container}>
-      <ul className={isOpen ? styles.ulNone : styles.ulFlex}>
+      <ul className={isOpen ? styles.modalClose : styles.modalOpen}>
         <li>
           <GiHamburgerMenu className={styles.hamburger} onClick={toggleModal} />
         </li>
