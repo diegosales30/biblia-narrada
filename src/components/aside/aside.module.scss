@@ -1,41 +1,6 @@
-// .container {
-//   width: 180px;
-//   min-width: 40px;
-//   background-color: rgb(47, 47, 58);
-//   height: 100vh;
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   border-radius:0px 5px 5px 0px;
-// }
-
-// .ulList{
-//   height: 400px;
-//   //border: 1px solid rgb(177, 167, 167);
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: space-around;
-//   //border-radius: 5px;
-//   li{
-//     list-style: none;
-//     display: flex;
-//     justify-content: flex-start;
-//     align-items: center;
-//     svg{
-//       font-size: 1.5rem;
-//     }
-//     svg, p{
-//       margin-left: 5px ;
-//     }
-
-    
-//   }
-// }
-
 .container {
   //width: 180px;
   //width: 40px;
-  
   min-width: 40px;
   background-color: rgb(47, 47, 58);
   height: 100vh;
@@ -55,7 +20,7 @@
   flex-direction: column;
   justify-content: space-around;
   border-radius: 5px;
-  transition: width 0.5s ease;
+  transition: width 0.4s ease;
   li{
     list-style: none;
     display: flex;
@@ -65,7 +30,6 @@
       font-size: 1.5rem;
       margin-left: 5px ;
     }
-    
   }
   p{
     display: none;
@@ -92,14 +56,11 @@
       svg{
         font-size: 1.5rem;
         margin-left: 5px ;
-        
       } 
       p{
         margin-left: 40px;
         position: fixed;
-      }
-      
-
+      } 
   }
   
 }
