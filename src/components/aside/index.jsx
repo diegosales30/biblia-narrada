@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import styles from "./aside.module.scss";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaHandHoldingHeart, FaQuestion } from "react-icons/fa";
@@ -12,7 +12,7 @@ const Aside = () => {
   const toggleModal = () => {
     setIsOpen(!isOpen);
   };
-  
+
   return (
     <aside className={styles.container}>
       <ul className={isOpen ? styles.modalClose : styles.modalOpen}>
