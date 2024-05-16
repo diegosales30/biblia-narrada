@@ -1,17 +1,25 @@
 "use client";
-import { createContext, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 
 export const NightContext = createContext();
 
 export const NightProvider = ({ children }) => {
-  const [mode, setMode] = useState(false);
+  const [nightMode, setNightMode] = useState(false);
 
-  const toggleMode = () => {
-    setMode(!mode);
+  const toggleNightMode = () => {
+    setNightMode(!nightMode);
   };
+  //use effect para add class no body com dom para lterar modo dia e noite
+  useEffect(() => {
+    if (nightMode) {
+      document.body.classList.add("dark");
+    } else {
+      document.body.classList.remove("dark");
+    }
+  }, [nightMode]);
 
   return (
-    <NightContext.Provider value={{ mode, setMode, toggleMode }}>
+    <NightContext.Provider value={{ nightMode, setNightMode, toggleNightMode }}>
       {children}
     </NightContext.Provider>
   );

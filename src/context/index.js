@@ -1,7 +1,12 @@
 "use client";
 import { ModalProvider } from "./modal-context";
+import { NightProvider } from "./night-mode";
 
 const Provider = ({ children }) => {
-  return <ModalProvider>{children}</ModalProvider>;
+  return (
+    <ModalProvider>
+      <NightProvider>{children}</NightProvider>
+    </ModalProvider>
+  );
 };
 export default Provider;
