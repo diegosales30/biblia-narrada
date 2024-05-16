@@ -1,7 +1,8 @@
 import { Inter } from "next/font/google";
 
-// import "./globals.css";
+import "./globals.css";
 import Provider from "@/context";
+import Aside from "@/components/aside";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -14,7 +15,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="pt-br">
       <Provider>
-        <body >{children}</body>
+        <body>
+        <Aside />
+          {children}
+        </body>
       </Provider>
     </html>
   );

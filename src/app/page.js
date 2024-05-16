@@ -1,8 +1,10 @@
-import Aside from "@/components/aside";
-
 import Link from "next/link";
-/* <Link href="/about">about</Link> */
 
 export default function Home() {
-  return <Aside />;
+  return (
+    <>
+      <h1>hello</h1>
+      <p><Link href="/about">ABOUTEEEE</Link></p>
+    </>
+  );
 }

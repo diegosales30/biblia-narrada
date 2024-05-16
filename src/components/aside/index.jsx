@@ -1,6 +1,5 @@
 "use client";
-import '../../app/globals.css';
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import styles from "./aside.module.scss";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaHandHoldingHeart, FaQuestion } from "react-icons/fa";
@@ -12,9 +11,6 @@ import { NightContext } from "@/context/night-mode";
 const Aside = () => {
   const { toggleModal, open,modalRef } = useContext(ModalContext);
   const { toggleNightMode, nightMode } = useContext(NightContext);
-
-  console.log(nightMode);
-
   return (
     <aside className={styles.container}>
       <ul ref={modalRef} className={open ? styles.modalClose : styles.modalOpen}>
