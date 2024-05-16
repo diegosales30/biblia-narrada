@@ -1,25 +1,38 @@
 "use client";
-import { useContext } from "react";
+import '../../app/globals.css';
+import { useContext, useEffect } from "react";
 import styles from "./aside.module.scss";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaHandHoldingHeart, FaQuestion } from "react-icons/fa";
 import { FaBook, FaPlay, FaMoon, FaSun } from "react-icons/fa6";
 import { TbCircleLetterNFilled } from "react-icons/tb";
 import { ModalContext } from "@/context/modal-context";
+import { NightContext } from "@/context/night-mode";
 
 const Aside = () => {
-  const { toggleModal, open, setOpen,modalRef } = useContext(ModalContext);
-  
+  const { toggleModal, open,modalRef } = useContext(ModalContext);
+  const { toggleNightMode, nightMode } = useContext(NightContext);
+
+  console.log(nightMode);
+
   return (
     <aside className={styles.container}>
       <ul ref={modalRef} className={open ? styles.modalClose : styles.modalOpen}>
         <li>
           <GiHamburgerMenu className={styles.hamburger} onClick={toggleModal} />
         </li>
-        <li>
-          <FaSun />
-          <p >Tela Escura</p>
-        </li>
+        {
+          !nightMode ? 
+          <li>
+            <FaSun onClick={toggleNightMode}/>
+            <p >Tela Clara</p>
+           </li>
+          :
+          <li>
+            <FaMoon onClick={toggleNightMode}/>
+            <p >Tela Escura</p>
+           </li>
+        }
         <li>
           <FaPlay />
           <p>Ouvir a Palavra</p>

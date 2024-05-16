@@ -4,8 +4,11 @@
   margin: 0;
 }
 body{
-  /* background-color: #0d1321; */
   background-color:  #e7ecef;
+  font-family: 'inter', sans-serif;
+}
+.dark {
+  background-color: #0d1321;
 }
 
 a {
