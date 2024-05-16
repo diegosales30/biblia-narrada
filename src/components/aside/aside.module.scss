@@ -1,6 +1,6 @@
 .container {
   min-width: 40px;
-  background-color: rgb(47, 47, 58);
+  background-color: #073b4c;
   height: 100vh;
   position: fixed;
   top: 0;
@@ -20,14 +20,16 @@
       justify-content: flex-start;
       align-items: center;
       &:hover{
-        color: rgb(8, 128, 197);
         cursor: pointer;
         transition: color 0.4s ease;
       }
       svg{
-       
         font-size: 1.5rem;
         margin-left: 5px ;
+        color: #ffff;
+      }
+      p{
+        color: #ffff;
       }
     }
   }
@@ -48,7 +50,7 @@
 
 .modalOpen{
   width: 180px;
-  transition: width 0.4s ease-out;
+  transition: width 0.3s ease-out;
     li{
       p{
         font-size: 1rem;
