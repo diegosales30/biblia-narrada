@@ -1,21 +1,18 @@
 "use client";
-import { useState } from "react";
+import { useContext } from "react";
 import styles from "./aside.module.scss";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaHandHoldingHeart, FaQuestion } from "react-icons/fa";
 import { FaBook, FaPlay, FaMoon, FaSun } from "react-icons/fa6";
 import { TbCircleLetterNFilled } from "react-icons/tb";
+import { ModalContext } from "@/context/modal-context";
 
 const Aside = () => {
-  const [isOpen, setIsOpen] = useState(true);
-
-  const toggleModal = () => {
-    setIsOpen(!isOpen);
-  };
-
+  const { toggleModal, open, setOpen,modalRef } = useContext(ModalContext);
+  
   return (
     <aside className={styles.container}>
-      <ul className={isOpen ? styles.modalClose : styles.modalOpen}>
+      <ul ref={modalRef} className={open ? styles.modalClose : styles.modalOpen}>
         <li>
           <GiHamburgerMenu className={styles.hamburger} onClick={toggleModal} />
         </li>
