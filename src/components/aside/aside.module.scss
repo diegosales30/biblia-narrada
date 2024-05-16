@@ -1,6 +1,6 @@
 .container {
   min-width: 40px;
-  background-color: #073b4c;
+  background-color: #274c77;
   height: 100vh;
   position: fixed;
   top: 0;
@@ -13,8 +13,7 @@
     flex-direction: column;
     justify-content: space-around;
     border-radius: 5px;
-    li{
-      
+    li{  
       list-style: none;
       display: flex;
       justify-content: flex-start;
@@ -26,10 +25,10 @@
       svg{
         font-size: 1.5rem;
         margin-left: 5px ;
-        color: #ffff;
+        color: #e7ecef;
       }
       p{
-        color: #ffff;
+        color: #e7ecef;
       }
     }
   }
