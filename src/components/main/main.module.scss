@@ -1,5 +1,11 @@
 .container {
-  width: calc(100vw - 5rem);
+  height: 100vh;
+  width: calc(100% - 2.5rem);
+  max-width: 1920px;
+  min-width: 319px;
   border: 1px solid red;
-  margin:0 auto;
+  margin: auto ;
+  margin-left: 2.5rem;
+  text-align: center;
+  z-index: 00000;
 }

@@ -9,26 +9,28 @@ import { ModalContext } from "@/context/modal-context";
 import { NightContext } from "@/context/night-mode";
 
 const Aside = () => {
-  const { toggleModal, open,modalRef } = useContext(ModalContext);
+  const { toggleModal, open, modalRef } = useContext(ModalContext);
   const { toggleNightMode, nightMode } = useContext(NightContext);
   return (
     <aside className={styles.container}>
-      <ul ref={modalRef} className={open ? styles.modalClose : styles.modalOpen}>
+      <ul
+        ref={modalRef}
+        className={open ? styles.modalClose : styles.modalOpen}
+      >
         <li>
           <GiHamburgerMenu className={styles.hamburger} onClick={toggleModal} />
         </li>
-        {
-          !nightMode ? 
+        {!nightMode ? (
           <li>
-            <FaSun onClick={toggleNightMode}/>
-            <p >Tela Clara</p>
-           </li>
-          :
+            <FaSun onClick={toggleNightMode} />
+            <p>Tela Clara</p>
+          </li>
+        ) : (
           <li>
-            <FaMoon onClick={toggleNightMode}/>
-            <p >Tela Escura</p>
-           </li>
-        }
+            <FaMoon onClick={toggleNightMode} />
+            <p>Tela Escura</p>
+          </li>
+        )}
         <li>
           <FaPlay />
           <p>Ouvir a Palavra</p>

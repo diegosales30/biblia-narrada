@@ -15,8 +15,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="pt-br">
       <Provider>
-        <body>
-        <Aside />
+        <body >
+          <Aside />
           {children}
         </body>
       </Provider>

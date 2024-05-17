@@ -4,6 +4,8 @@
   margin: 0;
 }
 body{
+  max-width: 1280px; 
+  margin: auto;
   background-color:  #e7ecef;
   color: #0d1321;
   font-family: 'inter', sans-serif;
