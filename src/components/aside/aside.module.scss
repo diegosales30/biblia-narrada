@@ -1,5 +1,5 @@
 .container {
-  min-width: 40px;
+  min-width: 2.5rem;
   background-color: #274c77;
   height: 100vh;
   position: fixed;
@@ -35,7 +35,7 @@
 }
 
 .modalClose {
-  width: 40px;
+  width: 2.5rem;
   transition: width 0.5s ease;
   li{
     svg{
