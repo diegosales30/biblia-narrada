@@ -5,10 +5,13 @@
 }
 body{
   background-color:  #e7ecef;
+  color: #0d1321;
   font-family: 'inter', sans-serif;
 }
 .dark {
   background-color: #0d1321;
+  color: #e7ecef;
+  font-family: 'inter', sans-serif;
 }
 
 a {
