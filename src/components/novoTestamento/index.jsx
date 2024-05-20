@@ -9,12 +9,10 @@ const NovoTestamento = () => {
     <div className={styles.container}>
       <h1>O Novo Testamento:</h1>
       <div>
-        <Link href="/antigo-testamento">
+        <Link href="/novo-testamento">
           <Image
             src={jesus}
             alt="img novo testamento"
-            width={150}
-            height={100}
           />
           <FaPlay size={50} />
         </Link>
