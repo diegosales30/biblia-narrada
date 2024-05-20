@@ -1,25 +1,18 @@
 "use client";
 import styles from "./main.module.scss";
 import Link from "next/link";
-import moses from "../../assets/moses.jpg"
+
 import jesus from "../../assets/jesus.jpg"
 import Image from "next/image";
 import { FaPlay } from "react-icons/fa6";
 import Versiculos from "../versiculos";
+import AntigoTestamento from "../antigoTestamento";
 
 const MainComponent = () => {
   return (
     <main className={styles.container}>
       <Versiculos />
-      <div className={styles.antigotestamento}>
-        <h1>O Antigo testamento:</h1>
-        <div>
-          <Link href="/antigo-testamento">
-            <Image src={moses} alt="img antigo testamento" width={150} height={100} />
-            <FaPlay size={50} />
-          </Link>
-        </div>
-      </div>
+      <AntigoTestamento />
       <div className={styles.novotestamento}>
         <h1>O Novo testamento:</h1>
         <div>
