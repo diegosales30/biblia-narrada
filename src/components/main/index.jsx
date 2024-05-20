@@ -5,24 +5,13 @@ import moses from "../../assets/moses.jpg"
 import jesus from "../../assets/jesus.jpg"
 import Image from "next/image";
 import { FaPlay } from "react-icons/fa6";
+import Versiculos from "../versiculos";
 
 const MainComponent = () => {
   return (
     <main className={styles.container}>
-      <div>
-        <h2>Versículo do dia:</h2>
-        <div>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-            In porro ad soluta alias minus. Recusandae quis ut praesentium eos corporis quam, 
-            cum quia rem. At expedita beatae quibusdam debitis distinction
-          </p>
-          <p>
-            Lorem 5:16
-          </p>
-        </div>
-      </div>
-      <div>
+      <Versiculos />
+      <div className={styles.antigotestamento}>
         <h1>O Antigo testamento:</h1>
         <div>
           <Link href="/antigo-testamento">
@@ -31,7 +20,7 @@ const MainComponent = () => {
           </Link>
         </div>
       </div>
-      <div>
+      <div className={styles.novotestamento}>
         <h1>O Novo testamento:</h1>
         <div>
           <Link href="/novo-testamento">
