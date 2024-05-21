@@ -39,14 +39,14 @@ const Aside = () => {
           </li>
         )}
         <li>
-          <Link href="/" >
-            <FaPlay color={currentPathName === "/"? "red" : ""} />
+          <Link href="/" className={currentPathName === "/" ? styles.activeIcon : ""}>
+            <FaPlay  />  
             <p>Ouvir a Palavra</p>
           </Link>
         </li>
         <li>
-          <Link href="/explore">
-            <TbCircleLetterNFilled color={currentPathName === "/explore"? "red" : ""} />
+          <Link href="/explore" className={currentPathName === "/explore" ? styles.activeIcon : ""}>
+            <TbCircleLetterNFilled />
             <p>Explore</p>
           </Link>
         </li>
