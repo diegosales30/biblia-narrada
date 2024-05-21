@@ -13,7 +13,6 @@ import Link from "next/link";
 const Aside = () => {
   const { toggleModal, open, modalRef } = useContext(ModalContext);
   const { toggleNightMode, nightMode } = useContext(NightContext);
-
   const currentPathName = usePathname();
 
   console.log(currentPathName);
@@ -51,19 +50,19 @@ const Aside = () => {
           </Link>
         </li>
         <li>
-          <Link href="/about">
+          <Link href="/about" className={currentPathName === "/about" ? styles.activeIcon : ""}>
             <FaQuestion />
             <p>Sobre o Projeto</p>
           </Link>
         </li>
         <li>
-          <Link href="/donation">
+          <Link href="/donation" className={currentPathName === "/donation" ? styles.activeIcon : ""}>
             <FaHandHoldingHeart />
             <p>Ajude o Projeto</p>
           </Link>
         </li>
         <li>
-          <Link href="/books">
+          <Link href="/books" className={currentPathName === "/books" ? styles.activeIcon : ""}>
             <FaBook />
             <p>Livros</p>
           </Link>
