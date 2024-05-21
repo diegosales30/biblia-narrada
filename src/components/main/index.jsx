@@ -3,6 +3,7 @@ import styles from "./main.module.scss";
 import Versiculos from "../versiculos";
 import AntigoTestamento from "../antigoTestamento";
 import NovoTestamento from "../novoTestamento";
+import Footer from "../footer";
 
 const MainComponent = () => {
   return (
@@ -10,6 +11,7 @@ const MainComponent = () => {
       <Versiculos />
       <AntigoTestamento />
       <NovoTestamento/>
+      <Footer />
     </main>
   );
 }
