@@ -1,9 +1,17 @@
 .container {
-  height: 100vh;
+  //height: 100vh;
+  height: calc(100vh - 3rem);
   width: calc(100% - 2.5rem);
   max-width: 1920px;
   margin: auto ;
   margin-left: 2.5rem;
   text-align: center;
   z-index: 00000;
+}
+
+@media screen and (max-width: 540px) {
+  .container {
+    height: calc(100vh - 3rem);
+    overflow: auto;
+  }
 }
