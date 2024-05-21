@@ -24,6 +24,7 @@
         cursor: pointer;
         transition: color 0.4s ease;
       }
+      
       svg{
         font-size: 1.5rem;
         margin-left: 5px ;
@@ -35,7 +36,9 @@
     }
   }
 }
-
+.activeIcon {
+  color: darkblue; /* Cor quando ativo */
+}
 .modalClose {
   width: 2.5rem;
   li{
@@ -51,6 +54,11 @@
 .modalOpen{
   width: 180px;
     li{
+      a{ 
+        display: flex;
+        align-items: center;
+      }
+      
       p{
         font-size: 1rem;
         margin-left: 40px;

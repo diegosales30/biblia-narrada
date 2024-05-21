@@ -1,5 +1,6 @@
 "use client";
 import { useContext } from "react";
+import { usePathname } from "next/navigation";
 import styles from "./aside.module.scss";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaHandHoldingHeart, FaQuestion } from "react-icons/fa";
@@ -7,10 +8,16 @@ import { FaBook, FaPlay, FaMoon, FaSun } from "react-icons/fa6";
 import { TbCircleLetterNFilled } from "react-icons/tb";
 import { ModalContext } from "@/context/modal-context";
 import { NightContext } from "@/context/night-mode";
+import Link from "next/link";
 
 const Aside = () => {
   const { toggleModal, open, modalRef } = useContext(ModalContext);
   const { toggleNightMode, nightMode } = useContext(NightContext);
+
+  const currentPathName = usePathname();
+
+  console.log(currentPathName);
+
   return (
     <aside className={styles.container}>
       <ul
@@ -32,24 +39,34 @@ const Aside = () => {
           </li>
         )}
         <li>
-          <FaPlay />
-          <p>Ouvir a Palavra</p>
+          <Link href="/" >
+            <FaPlay color={currentPathName === "/"? "red" : ""} />
+            <p>Ouvir a Palavra</p>
+          </Link>
         </li>
         <li>
-          <TbCircleLetterNFilled />
-          <p>Explore</p>
+          <Link href="/explore">
+            <TbCircleLetterNFilled color={currentPathName === "/explore"? "red" : ""} />
+            <p>Explore</p>
+          </Link>
         </li>
         <li>
-          <FaQuestion />
-          <p>Sobre o Projeto</p>
+          <Link href="/about">
+            <FaQuestion />
+            <p>Sobre o Projeto</p>
+          </Link>
         </li>
         <li>
-          <FaHandHoldingHeart />
-          <p>Ajude o Projeto</p>
+          <Link href="/donation">
+            <FaHandHoldingHeart />
+            <p>Ajude o Projeto</p>
+          </Link>
         </li>
         <li>
-          <FaBook />
-          <p>Livros</p>
+          <Link href="/books">
+            <FaBook />
+            <p>Livros</p>
+          </Link>
         </li>
       </ul>
     </aside>
