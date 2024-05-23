@@ -15,7 +15,7 @@ const Aside = () => {
   const { toggleNightMode, nightMode } = useContext(NightContext);
   const currentPathName = usePathname();
 
-  console.log(currentPathName);
+  //console.log(currentPathName);
 
   return (
     <aside className={styles.container}>

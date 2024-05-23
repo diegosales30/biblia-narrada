@@ -302,39 +302,121 @@ export const versiculos = [
   },
 ];
 
-const antigoTestamento = [
+export const antigoTestamento = [
   {
-    genesis: [
-      cap1 [
-        {
+    livro: "Gênesis",
+    capitulos: [
+      {
         id: 1,
         url: "/antigo-testamento-genesis",
         name: "Gênesis",
-        title: "genesis 1",
-        src: "https://www.youtube.com/embed/2130BQSmFmE?autoplay=1&cc_load_policy=0&fs=0&loop=1&modestbranding=1&playsinline=1&color=white&iv_load_policy=3&fs=0&showinfo=0",
-      }
-    ],
-      cap2 [ 
-        {
+        title: "Gênesis 1",
+        src: "https://www.youtube.com/embed/2130BQSmFmE?autoplay=1&cc_load_policy=0&fs=0&loop=1&modestbranding=1&playsinline=1&color=white&iv_load_policy=3&fs=0&showinfo=0"
+      },
+      {
         id: 2,
         url: "/antigo-testamento-genesis",
         name: "Gênesis",
-        title: "genesis 2",
-        src: "https://www.youtube.com/embed/y8tOQheeg1E?autoplay=1&cc_load_policy=0&fs=0&loop=1&modestbranding=1&playsinline=1&color=white&iv_load_policy=3&fs=0&showinfo=0",
-      }
-    ],
-      cap3[
-        {
+        title: "Gênesis 2",
+        src: "https://www.youtube.com/embed/y8tOQheeg1E?autoplay=1&cc_load_policy=0&fs=0&loop=1&modestbranding=1&playsinline=1&color=white&iv_load_policy=3&fs=0&showinfo=0"
+      },
+      {
         id: 3,
         url: "/antigo-testamento-genesis",
         name: "Gênesis",
-        title: "genesis 3",
-        src: "https://www.youtube.com/embed/GdwMYMoISI4?autoplay=1&cc_load_policy=0&fs=0&loop=1&modestbranding=1&playsinline=1&color=white&iv_load_policy=3&fs=0&showinfo=0",
+        title: "Gênesis 3",
+        src: "https://www.youtube.com/embed/GdwMYMoISI4?autoplay=1&cc_load_policy=0&fs=0&loop=1&modestbranding=1&playsinline=1&color=white&iv_load_policy=3&fs=0&showinfo=0"
       }
-    ],
-  ],
+    ]
+  },
+  {
+    livro: "Êxodo",
+    capitulos: [
+      {
+        id: 1,
+        url: "/antigo-testamento-exodo",
+        name: "Êxodo",
+        title: "Êxodo 1",
+        src: "https://www.youtube.com/embed/2130BQSmFmE?autoplay=1&cc_load_policy=0&fs=0&loop=1&modestbranding=1&playsinline=1&color=white&iv_load_policy=3&fs=0&showinfo=0"
+      },
+      {
+        id: 2,
+        url: "/antigo-testamento-exodo",
+        name: "Êxodo",
+        title: "Êxodo 2",
+        src: "https://www.youtube.com/embed/y8tOQheeg1E?autoplay=1&cc_load_policy=0&fs=0&loop=1&modestbranding=1&playsinline=1&color=white&iv_load_policy=3&fs=0&showinfo=0"
+      },
+      {
+        id: 3,
+        url: "/antigo-testamento-exodo",
+        name: "Êxodo",
+        title: "Êxodo 3",
+        src: "https://www.youtube.com/embed/GdwMYMoISI4?autoplay=1&cc_load_policy=0&fs=0&loop=1&modestbranding=1&playsinline=1&color=white&iv_load_policy=3&fs=0&showinfo=0"
+      }
+    ]
+  },
+  {
+    livro: "Levíticos",
+    capitulos: [
+      {
+        id: 1,
+        url: "/antigo-testamento-leviticos",
+        name: "Levíticos",
+        title: "Levíticos 1",
+        src: "https://www.youtube.com/embed/2130BQSmFmE?autoplay=1&cc_load_policy=0&fs=0&loop=1&modestbranding=1&playsinline=1&color=white&iv_load_policy=3&fs=0&showinfo=0"
+      },
+      {
+        id: 2,
+        url: "/antigo-testamento-leviticos",
+        name: "Levíticos",
+        title: "Levíticos 2",
+        src: "https://www.youtube.com/embed/y8tOQheeg1E?autoplay=1&cc_load_policy=0&fs=0&loop=1&modestbranding=1&playsinline=1&color=white&iv_load_policy=3&fs=0&showinfo=0"
+      },
+      {
+        id: 3,
+        url: "/antigo-testamento-leviticos",
+        name: "Levíticos",
+        title: "Levíticos 3",
+        src: "https://www.youtube.com/embed/GdwMYMoISI4?autoplay=1&cc_load_policy=0&fs=0&loop=1&modestbranding=1&playsinline=1&color=white&iv_load_policy=3&fs=0&showinfo=0"
+      }
+    ]
   }
 ];
+
+
+// const antigoTestamento = [
+//   {
+//     genesis: [
+//       cap1 [
+//         {
+//         id: 1,
+//         url: "/antigo-testamento-genesis",
+//         name: "Gênesis",
+//         title: "genesis 1",
+//         src: "https://www.youtube.com/embed/2130BQSmFmE?autoplay=1&cc_load_policy=0&fs=0&loop=1&modestbranding=1&playsinline=1&color=white&iv_load_policy=3&fs=0&showinfo=0",
+//       }
+//     ],
+//       cap2 [ 
+//         {
+//         id: 2,
+//         url: "/antigo-testamento-genesis",
+//         name: "Gênesis",
+//         title: "genesis 2",
+//         src: "https://www.youtube.com/embed/y8tOQheeg1E?autoplay=1&cc_load_policy=0&fs=0&loop=1&modestbranding=1&playsinline=1&color=white&iv_load_policy=3&fs=0&showinfo=0",
+//       }
+//     ],
+//       cap3[
+//         {
+//         id: 3,
+//         url: "/antigo-testamento-genesis",
+//         name: "Gênesis",
+//         title: "genesis 3",
+//         src: "https://www.youtube.com/embed/GdwMYMoISI4?autoplay=1&cc_load_policy=0&fs=0&loop=1&modestbranding=1&playsinline=1&color=white&iv_load_policy=3&fs=0&showinfo=0",
+//       }
+//     ],
+//   ],
+//   }
+// ];
 
     // exodo: {
     //   cap1: {
