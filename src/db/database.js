@@ -301,3 +301,61 @@ export const versiculos = [
     livro: "(2 Timóteo 1:7)",
   },
 ];
+
+const antigoTestamento = [
+  {
+    genesis: [
+      cap1 [
+        {
+        id: 1,
+        url: "/antigo-testamento-genesis",
+        name: "Gênesis",
+        title: "genesis 1",
+        src: "https://www.youtube.com/embed/2130BQSmFmE?autoplay=1&cc_load_policy=0&fs=0&loop=1&modestbranding=1&playsinline=1&color=white&iv_load_policy=3&fs=0&showinfo=0",
+      }
+    ],
+      cap2 [ 
+        {
+        id: 2,
+        url: "/antigo-testamento-genesis",
+        name: "Gênesis",
+        title: "genesis 2",
+        src: "https://www.youtube.com/embed/y8tOQheeg1E?autoplay=1&cc_load_policy=0&fs=0&loop=1&modestbranding=1&playsinline=1&color=white&iv_load_policy=3&fs=0&showinfo=0",
+      }
+    ],
+      cap3[
+        {
+        id: 3,
+        url: "/antigo-testamento-genesis",
+        name: "Gênesis",
+        title: "genesis 3",
+        src: "https://www.youtube.com/embed/GdwMYMoISI4?autoplay=1&cc_load_policy=0&fs=0&loop=1&modestbranding=1&playsinline=1&color=white&iv_load_policy=3&fs=0&showinfo=0",
+      }
+    ],
+  ],
+  }
+];
+
+    // exodo: {
+    //   cap1: {
+    //     id: 1,
+    //     url: "/antigo-testamento-exodo",
+    //     name: "Êxodo",
+    //     title: "exodo 1",
+    //     src: "https://www.youtube.com/embed/2130BQSmFmE?autoplay=1&cc_load_policy=0&fs=0&loop=1&modestbranding=1&playsinline=1&color=white&iv_load_policy=3&fs=0&showinfo=0",
+    //   },
+    //   cap2: {
+    //     id: 2,
+    //     url: "/antigo-testamento-exodo",
+    //     name: "Êxodo",
+    //     title: "exodo 2",
+    //     src: "https://www.youtube.com/embed/y8tOQheeg1E?autoplay=1&cc_load_policy=0&fs=0&loop=1&modestbranding=1&playsinline=1&color=white&iv_load_policy=3&fs=0&showinfo=0",
+    //   },
+    //   cap3: {
+    //     id: 3,
+    //     url: "/antigo-testamento-exodo",
+    //     name: "Êxodo",
+    //     title: "exodo 3",
+    //     src: "https://www.youtube.com/embed/GdwMYMoISI4?autoplay=1&cc_load_policy=0&fs=0&loop=1&modestbranding=1&playsinline=1&color=white&iv_load_policy=3&fs=0&showinfo=0",
+    //   },
+    // },
